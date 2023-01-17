@@ -1,21 +1,34 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+Wellcome to my fullstack app => notise-app
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBNxWcW9QNxmrxYkj4Jd6Yl43GGlF0Uoj8",
-  authDomain: "fullstack-notise-app.firebaseapp.com",
-  projectId: "fullstack-notise-app",
-  storageBucket: "fullstack-notise-app.appspot.com",
-  messagingSenderId: "692677481778",
-  appId: "1:692677481778:web:944ea6a537222d76e7b32b",
-  measurementId: "G-SNJCZCCHRN"
-};
+It is realized on [Node.js](https://nodejs.org/en/download/) in backend 
+and [React.js](https://reactjs.org/) in frontend part of app.
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+## Installation
+
+To install app in your local pc with [npm](https://docs.npmjs.com/cli/v9/commands/npm-install) use:
+
+```bash
+npm install
+```
+To install app in your local pc with [yarn](https://classic.yarnpkg.com/lang/en/docs/cli/install/) use:
+
+```bash
+yarn install
+```
+
+## Usage
+
+```bash
+npm run dev
+
+
+## Description
+
+This application is designed to learn and practice complex skills in React, Redux, Node.js (mongo, express)
+but without the implementation of a presentable design.
+You can use it for free.
+
+
+## License
+
+[ISC](https://opensource.org/licenses/ISC)
