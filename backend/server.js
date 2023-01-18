@@ -1,13 +1,13 @@
 const express = require("express");
 const notes = require("./data/notes");
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 const { errorHandler, notFound } = require("./middelwares/errorMiddelwares");
 
 const app = express();
-dotenv.config();
+
 connectDB();
 app.use(express.json());
 
@@ -23,6 +23,6 @@ app.get("/api/notes", (req, res) => {
 
 app.use(errorHandler);
 app.use(notFound);
-
+console.log(process.env.PORT);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server started on ${PORT}`));
